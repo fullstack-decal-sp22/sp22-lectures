@@ -3,6 +3,7 @@ import './styles/Board.css';
 import Square from "./Square";
 
 function Board() {
+
     const status = 'Next player: X';
 
     function renderSquare(i) {
@@ -11,7 +12,6 @@ function Board() {
 
     return (  
         <div>
-          <div className="status">{status}</div>
           <div className="board-row">
             {renderSquare(0)}
             {renderSquare(1)}
@@ -27,6 +27,7 @@ function Board() {
             {renderSquare(7)}
             {renderSquare(8)}
           </div>
+          <div className="status">{status}</div>
         </div>
     )
 }
